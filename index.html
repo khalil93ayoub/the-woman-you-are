@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Woman You Are</title>
+  <meta name="description" content="A poetic tribute website appreciating women as mothers, sisters, daughters, wives, and simply as women.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">The Woman You Are</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+    <nav class="site-nav">
+      <a href="stories.html">Stories</a>
+      <a href="#choose">Choose Your Title</a>
+      <a href="#mission">Our Mission</a>
+      <a class="nav-donate" href="YOUR_STRIPE_PAYMENT_LINK">Donate</a>
+    </nav>
+  </header>
+
+  <a class="floating-donate" href="YOUR_STRIPE_PAYMENT_LINK" aria-label="Donate">♡ Donate</a>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <p class="eyebrow">A tribute to her</p>
+        <h1>The Woman You Are</h1>
+        <p class="hero-text">For every woman who gave more than she was ever thanked for. For the love she carried, the strength she became, and the life she helped others build.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#choose">Choose Your Title</a>
+          <a class="button secondary" href="stories.html">Read Stories</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="portrait-card"><span>We see you.</span></div>
+      </div>
+    </section>
+
+    <section id="choose" class="section-pad choose-section">
+      <p class="eyebrow center">Choose your title</p>
+      <h2 class="center">A letter written for her</h2>
+      <div class="title-grid">
+        <a href="#mother">Mother</a>
+        <a href="#sister">Sister</a>
+        <a href="#daughter">Daughter</a>
+        <a href="#wife">Wife</a>
+        <a href="#woman">Woman</a>
+      </div>
+    </section>
+
+    <section id="mother" class="letter-card section-pad" data-modal="mother-modal">
+      <div><p class="eyebrow">The Mother You Are</p><h2>For the woman who became home.</h2></div>
+      <p>You spend so much of your life looking at everyone around you that you rarely stop to look at yourself. You remember, protect, worry, forgive, and continue loving long after you are tired.</p>
+      <button class="text-link open-modal" data-modal="mother-modal">A Letter to Mothers →</button>
+    </section>
+
+    <section id="sister" class="letter-card section-pad alt" data-modal="sister-modal">
+      <div><p class="eyebrow">The Sister You Are</p><h2>For the woman who made life less lonely.</h2></div>
+      <p>You are one of life's first gifts. A keeper of memories, a defender in silence, a friend with roots deeper than time and a heart that knows where someone came from.</p>
+      <button class="text-link open-modal" data-modal="sister-modal">A Letter to Sisters →</button>
+    </section>
+
+    <section id="daughter" class="letter-card section-pad" data-modal="daughter-modal">
+      <div><p class="eyebrow">The Daughter You Are</p><h2>For the woman who carries hope forward.</h2></div>
+      <p>You arrived carrying possibility before you even understood it. Your worth was never hidden inside anyone's expectations. Your dreams, voice, and journey matter.</p>
+      <button class="text-link open-modal" data-modal="daughter-modal">A Letter to Daughters →</button>
+    </section>
+
+    <section id="wife" class="letter-card section-pad alt" data-modal="wife-modal">
+      <div><p class="eyebrow">The Wife You Are</p><h2>For the woman who chooses love daily.</h2></div>
+      <p>Love is not built only in grand moments. It is built in patience, support, forgiveness, ordinary mornings, difficult nights, and the quiet decision to stay present.</p>
+      <button class="text-link open-modal" data-modal="wife-modal">A Letter to Wives →</button>
+    </section>
+
+    <section id="woman" class="letter-card section-pad feature" data-modal="woman-modal">
+      <div><p class="eyebrow">The Woman You Are</p><h2>Before every title, there is you.</h2></div>
+      <p>Not what you give. Not what you carry. Not what others expect. You are a whole person with a heart, a history, a softness, a strength, and a life that deserves to be seen.</p>
+      <button class="text-link open-modal" data-modal="woman-modal">A Letter to Women →</button>
+    </section>
+
+    <section id="mission" class="mission section-pad">
+      <p class="eyebrow center">Our Mission</p>
+      <h2 class="center">To make appreciation feel personal again.</h2>
+      <p>This website exists to give women words they may not hear enough: thank you, we see you, and you are more than what you do for others.</p>
+      <a class="button primary" href="YOUR_STRIPE_PAYMENT_LINK">Support Our Mission</a>
+    </section>
+
+    <section class="footer-cta section-pad">
+      <h2>For every woman who gave more than she was ever thanked for.</h2>
+      <div class="hero-actions center-actions">
+        <button class="button primary open-modal" data-modal="story-form-modal">Share Your Story</button>
+        <button class="button secondary open-modal" data-modal="words-form-modal">We Hear Your Words</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> The Woman You Are</p>
+  </footer>
+
+  <div id="mother-modal" class="modal"><div class="modal-box"><button class="modal-close">×</button><article data-include="content/mother.html"></article><div class="modal-actions"><p>If these words touched your heart, help keep this tribute alive.</p><a class="button primary" href="YOUR_STRIPE_PAYMENT_LINK">Donate</a><button class="button secondary modal-close-bottom">Close</button></div></div></div>
+  <div id="sister-modal" class="modal"><div class="modal-box"><button class="modal-close">×</button><article data-include="content/sister.html"></article><div class="modal-actions"><p>If these words touched your heart, help keep this tribute alive.</p><a class="button primary" href="YOUR_STRIPE_PAYMENT_LINK">Donate</a><button class="button secondary modal-close-bottom">Close</button></div></div></div>
+  <div id="daughter-modal" class="modal"><div class="modal-box"><button class="modal-close">×</button><article data-include="content/daughter.html"></article><div class="modal-actions"><p>If these words touched your heart, help keep this tribute alive.</p><a class="button primary" href="YOUR_STRIPE_PAYMENT_LINK">Donate</a><button class="button secondary modal-close-bottom">Close</button></div></div></div>
+  <div id="wife-modal" class="modal"><div class="modal-box"><button class="modal-close">×</button><article data-include="content/wife.html"></article><div class="modal-actions"><p>If these words touched your heart, help keep this tribute alive.</p><a class="button primary" href="YOUR_STRIPE_PAYMENT_LINK">Donate</a><button class="button secondary modal-close-bottom">Close</button></div></div></div>
+  <div id="woman-modal" class="modal"><div class="modal-box"><button class="modal-close">×</button><article data-include="content/woman.html"></article><div class="modal-actions"><p>If these words touched your heart, help keep this tribute alive.</p><a class="button primary" href="YOUR_STRIPE_PAYMENT_LINK">Donate</a><button class="button secondary modal-close-bottom">Close</button></div></div></div>
+
+  <div id="story-form-modal" class="modal"><div class="modal-box small"><button class="modal-close">×</button><h2>Share Your Story</h2><form action="YOUR_FORMSPREE_ENDPOINT" method="POST"><label>Name<input name="name" required></label><label>Email optional<input type="email" name="email"></label><label>Your Story<textarea name="story" rows="8" required></textarea></label><button class="button primary" type="submit">Send Story</button></form></div></div>
+  <div id="words-form-modal" class="modal"><div class="modal-box small"><button class="modal-close">×</button><h2>We Hear Your Words</h2><form action="YOUR_FORMSPREE_ENDPOINT" method="POST"><label>Name<input name="name" required></label><label>Your Words<textarea name="message" rows="8" required></textarea></label><button class="button primary" type="submit">Send Message</button></form></div></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
