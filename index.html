@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Woman You Are</title>
+  <meta name="description" content="A poetic tribute website appreciating women as mothers, sisters, daughters, wives, and simply as women.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260610-5">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="The Woman You Are home">
+      <span>The</span>
+      <span>Woman</span>
+      <span>You Are</span>
+      <svg viewBox="0 0 44 72" aria-hidden="true">
+        <path d="M22 69c-2-18-1-36 6-56" />
+        <path d="M28 21c7-2 11-7 12-15-8 1-12 5-12 15Z" />
+        <path d="M24 33c-8-1-14-5-17-13 9-1 15 4 17 13Z" />
+        <path d="M29 44c7 0 12-4 14-11-8 0-13 4-14 11Z" />
+        <path d="M22 54c-8 0-14-4-18-12 9 0 15 4 18 12Z" />
+      </svg>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="stories.html">Stories</a>
+      <a href="#choose">Choose Your Title <span aria-hidden="true">⌄</span></a>
+      <a href="#mission">Our Mission</a>
+    </nav>
+
+    <a class="donate-button donate-button--top" href="https://donate.stripe.com/eVq28ra2o1vcfm3bBRcIE05" target="_blank" rel="noopener">
+      Donate <span aria-hidden="true">♡</span>
+    </a>
+  </header>
+
+  <a class="floating-donate" href="https://donate.stripe.com/eVq28ra2o1vcfm3bBRcIE05" target="_blank" rel="noopener" aria-label="Donate">
+    Donate <span aria-hidden="true">♡</span>
+  </a>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 id="hero-title">The Woman<br>You Are</h1>
+        <svg class="heart-divider" viewBox="0 0 288 28" aria-hidden="true">
+          <path d="M1 17c28 6 69-2 112 2 47 4 105 3 174-4" />
+          <path d="M21 6c-6-6-15 2-8 11 2 3 6 6 8 8 2-2 7-5 9-8 7-9-2-17-9-11Z" />
+        </svg>
+        <p>To the woman who became everyone’s strength, even when she needed support too.</p>
+        <div class="hero__actions">
+          <a class="button button--solid" href="#choose">Choose Your Title <span aria-hidden="true">⌄</span></a>
+          <a class="button button--outline" href="#mission">Our Mission</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="choose" class="title-picker" aria-labelledby="choose-title">
+      <div class="section-title">
+        <span></span>
+        <h2 id="choose-title">Choose Your Title</h2>
+        <span></span>
+      </div>
+      <div class="tiny-heart" aria-hidden="true">♡</div>
+
+      <nav class="title-nav" aria-label="Choose a title letter">
+        <a href="#mother" class="title-nav__item">
+          <span class="line-icon line-icon--mother" aria-hidden="true"></span>
+          <span>Mother</span>
+        </a>
+        <a href="#sister" class="title-nav__item">
+          <span class="line-icon line-icon--sister" aria-hidden="true"></span>
+          <span>Sister</span>
+        </a>
+        <a href="#daughter" class="title-nav__item">
+          <span class="line-icon line-icon--daughter" aria-hidden="true"></span>
+          <span>Daughter</span>
+        </a>
+        <a href="#wife" class="title-nav__item">
+          <span class="line-icon line-icon--wife" aria-hidden="true"></span>
+          <span>Wife</span>
+        </a>
+        <a href="#woman" class="title-nav__item">
+          <span class="line-icon line-icon--woman" aria-hidden="true"></span>
+          <span>Woman</span>
+        </a>
+      </nav>
+
+      <p class="title-picker__note">A title above opens the part written for her.</p>
+    </section>
+
+    <section class="letters" aria-label="Letters by title">
+      <article id="mother" class="letter-row letter-row--mother">
+        <div class="letter-row__image"><img src="assets/images/mother.jpg" alt="Mother holding a young daughter"></div>
+        <p class="letter-row__number">01</p>
+        <div class="letter-row__copy">
+          <h2>The Mother<br>You Are</h2>
+          <svg class="small-divider" viewBox="0 0 170 14" aria-hidden="true"><path d="M1 7c54 4 103 3 168-2" /><path d="M86 2c-4-4-10 1-6 7 2 2 4 3 6 5 2-2 5-3 6-5 4-6-2-11-6-7Z" /></svg>
+          <p>You are the first home, the first teacher, the first love. You carry lives, you give without expecting, and you love beyond words.</p>
+          <button class="text-link open-modal" type="button" data-modal="mother-modal">Read more as a mother →</button>
+        </div>
+        <div class="botanical botanical--tall" aria-hidden="true"></div>
+      </article>
+
+      <article id="sister" class="letter-row letter-row--sister letter-row--image-right">
+        <p class="letter-row__number">02</p>
+        <div class="botanical" aria-hidden="true"></div>
+        <div class="letter-row__copy">
+          <h2>The Sister<br>You Are</h2>
+          <svg class="small-divider" viewBox="0 0 170 14" aria-hidden="true"><path d="M1 7c54 4 103 3 168-2" /><path d="M86 2c-4-4-10 1-6 7 2 2 4 3 6 5 2-2 5-3 6-5 4-6-2-11-6-7Z" /></svg>
+          <p>You are the first friend, the secret keeper, the laughter partner and the lifelong cheerleader.</p>
+          <button class="text-link open-modal" type="button" data-modal="sister-modal">Read more as a sister →</button>
+        </div>
+        <div class="letter-row__image"><img src="assets/images/sister.jpg" alt="Two sisters standing together at sunset"></div>
+      </article>
+
+      <article id="daughter" class="letter-row letter-row--daughter">
+        <div class="letter-row__image"><img src="assets/images/daughter.jpg" alt="A daughter looking upward in warm light"></div>
+        <p class="letter-row__number">03</p>
+        <div class="letter-row__copy">
+          <h2>The Daughter<br>You Are</h2>
+          <svg class="small-divider" viewBox="0 0 170 14" aria-hidden="true"><path d="M1 7c54 4 103 3 168-2" /><path d="M86 2c-4-4-10 1-6 7 2 2 4 3 6 5 2-2 5-3 6-5 4-6-2-11-6-7Z" /></svg>
+          <p>You are a dream, a blessing, a hope for tomorrow. You carry everyone’s wishes and shape your own.</p>
+          <button class="text-link open-modal" type="button" data-modal="daughter-modal">Read more as a daughter →</button>
+        </div>
+        <div class="botanical botanical--tall" aria-hidden="true"></div>
+      </article>
+
+      <article id="wife" class="letter-row letter-row--wife letter-row--image-right">
+        <p class="letter-row__number">04</p>
+        <div class="botanical" aria-hidden="true"></div>
+        <div class="letter-row__copy">
+          <h2>The Wife<br>You Are</h2>
+          <svg class="small-divider" viewBox="0 0 170 14" aria-hidden="true"><path d="M1 7c54 4 103 3 168-2" /><path d="M86 2c-4-4-10 1-6 7 2 2 4 3 6 5 2-2 5-3 6-5 4-6-2-11-6-7Z" /></svg>
+          <p>You are the partner, the strength, the calm in chaos. You build a life, nurture a heart and walk every journey together.</p>
+          <button class="text-link open-modal" type="button" data-modal="wife-modal">Read more as a wife →</button>
+        </div>
+        <div class="letter-row__image"><img src="assets/images/wife.jpg" alt="A wife and husband holding each other"></div>
+      </article>
+
+      <article id="woman" class="letter-row letter-row--woman">
+        <div class="letter-row__image"><img src="assets/images/woman.jpg" alt="A woman standing in golden evening light"></div>
+        <p class="letter-row__number">05</p>
+        <div class="letter-row__copy">
+          <h2>The Woman<br>You Are</h2>
+          <svg class="small-divider" viewBox="0 0 170 14" aria-hidden="true"><path d="M1 7c54 4 103 3 168-2" /><path d="M86 2c-4-4-10 1-6 7 2 2 4 3 6 5 2-2 5-3 6-5 4-6-2-11-6-7Z" /></svg>
+          <p>Beyond every role, beyond every expectation, you are a woman, strong, resilient, beautiful and irreplaceable.</p>
+          <button class="text-link open-modal" type="button" data-modal="woman-modal">Read more as a woman →</button>
+        </div>
+        <div class="botanical botanical--tall" aria-hidden="true"></div>
+      </article>
+    </section>
+
+    <section id="mission" class="mission">
+      <div class="botanical botanical--corner botanical--left" aria-hidden="true"></div>
+      <div class="mission__copy">
+        <h2>For every woman who gave more<br>than she was ever thanked for.</h2>
+        <p>Thank you. We see you. We celebrate you.</p>
+        <svg class="heart-divider" viewBox="0 0 288 28" aria-hidden="true">
+          <path d="M1 17c28 6 69-2 112 2 47 4 105 3 174-4" />
+          <path d="M144 6c-6-6-15 2-8 11 2 3 6 6 8 8 2-2 7-5 9-8 7-9-2-17-9-11Z" />
+        </svg>
+        <div class="mission__actions">
+          <button class="button button--outline open-modal" type="button" data-modal="story-form-modal">♡ Share Your Story</button>
+          <button class="button button--solid open-modal" type="button" data-modal="words-form-modal">♡ We Hear You</button>
+        </div>
+      </div>
+      <div class="botanical botanical--corner botanical--right" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> The Woman You Are. All rights reserved.</p>
+  </footer>
+
+  <div id="mother-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="content/mother.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+  <div id="sister-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="content/sister.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+  <div id="daughter-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="content/daughter.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+  <div id="wife-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="content/wife.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+  <div id="woman-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="content/woman.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+
+  <div id="story-form-modal" class="modal" aria-hidden="true">
+    <div class="modal-box modal-box--form">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+      <h2>Share Your Story</h2>
+      <p>Your story can inspire someone today.</p>
+      <form action="https://formsubmit.co/ajax/khalil93paypal@gmail.com" method="POST" data-formsubmit-form data-success-message="Thank you. Your story was sent.">
+        <input type="hidden" name="_subject" value="New story submission - The Woman You Are">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <label><span>Your Name</span><input name="name" required placeholder="Your Name"></label>
+        <label><span>Email optional</span><input type="email" name="email" placeholder="Email (optional)"></label>
+        <label><span>Your Story</span><textarea name="story" rows="7" required placeholder="Your Story..."></textarea></label>
+        <button class="button button--solid" type="submit">Send Story <span aria-hidden="true">↗</span></button>
+        <p class="mail-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="words-form-modal" class="modal" aria-hidden="true">
+    <div class="modal-box modal-box--form">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+      <h2>We Hear You</h2>
+      <p>We listen to your words.</p>
+      <form action="https://formsubmit.co/ajax/khalil93paypal@gmail.com" method="POST" data-formsubmit-form data-success-message="Thank you. Your words were sent.">
+        <input type="hidden" name="_subject" value="New message - We Hear Your Words">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <label><span>Your Name</span><input name="name" required placeholder="Your Name"></label>
+        <label><span>Your Words</span><textarea name="message" rows="7" required placeholder="Your Words..."></textarea></label>
+        <button class="button button--solid" type="submit">Send Message <span aria-hidden="true">↗</span></button>
+        <p class="mail-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=20260610-5"></script>
+</body>
+</html>

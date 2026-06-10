@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stories | The Woman You Are</title>
+  <meta name="description" content="Shared stories from women and people honoring women in their lives.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260610-5">
+</head>
+<body>
+  <header class="site-header is-scrolled" data-header>
+    <a class="brand" href="index.html" aria-label="The Woman You Are home">
+      <span>The</span>
+      <span>Woman</span>
+      <span>You Are</span>
+      <svg viewBox="0 0 44 72" aria-hidden="true">
+        <path d="M22 69c-2-18-1-36 6-56" />
+        <path d="M28 21c7-2 11-7 12-15-8 1-12 5-12 15Z" />
+        <path d="M24 33c-8-1-14-5-17-13 9-1 15 4 17 13Z" />
+        <path d="M29 44c7 0 12-4 14-11-8 0-13 4-14 11Z" />
+        <path d="M22 54c-8 0-14-4-18-12 9 0 15 4 18 12Z" />
+      </svg>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html#choose">Choose Your Title <span aria-hidden="true">⌄</span></a>
+      <a href="index.html#mission">Our Mission</a>
+      <button class="text-link open-modal" type="button" data-modal="story-form-modal">Share Your Story</button>
+    </nav>
+
+    <a class="donate-button donate-button--top" href="https://donate.stripe.com/eVq28ra2o1vcfm3bBRcIE05" target="_blank" rel="noopener">
+      Donate <span aria-hidden="true">♡</span>
+    </a>
+  </header>
+
+  <a class="floating-donate" href="https://donate.stripe.com/eVq28ra2o1vcfm3bBRcIE05" target="_blank" rel="noopener" aria-label="Donate">
+    Donate <span aria-hidden="true">♡</span>
+  </a>
+
+  <main>
+    <section class="page-hero" aria-labelledby="stories-title">
+      <p class="eyebrow">Shared stories</p>
+      <h1 id="stories-title">Stories that deserve to be heard.</h1>
+      <p>These are pieces shared by women, or by people honoring the women who shaped them. New stories can be reviewed and added manually.</p>
+      <button class="button button--solid open-modal" type="button" data-modal="story-form-modal">Share Your Story <span aria-hidden="true">♡</span></button>
+    </section>
+
+    <section class="stories-section" aria-label="Story collection">
+      <div class="story-grid">
+        <article class="story-card">
+          <p class="eyebrow">Mariam</p>
+          <h2>The day I understood my mother’s silence</h2>
+          <p>I used to think my mother was quiet because she had nothing to say. Later, I understood she was carrying more than anyone knew.</p>
+          <button class="text-link open-modal" type="button" data-modal="story-001-modal">Read More →</button>
+        </article>
+
+        <article class="story-card">
+          <p class="eyebrow">Anonymous</p>
+          <h2>For my sister, who never left</h2>
+          <p>There are people who appear in your life when things are easy. And there are people who stay when everything becomes heavy.</p>
+          <button class="text-link open-modal" type="button" data-modal="story-002-modal">Read More →</button>
+        </article>
+
+        <article class="story-card">
+          <p class="eyebrow">Leila</p>
+          <h2>A letter I never sent to myself</h2>
+          <p>I spent years waiting for someone to tell me I was enough. One day, I realized the words had to come from me first.</p>
+          <button class="text-link open-modal" type="button" data-modal="story-003-modal">Read More →</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> The Woman You Are. All rights reserved.</p>
+  </footer>
+
+  <div id="story-001-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="stories/story-001.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+  <div id="story-002-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="stories/story-002.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+  <div id="story-003-modal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" type="button" aria-label="Close">×</button><article data-include="stories/story-003.html"></article><div class="modal-actions"><button class="button button--solid modal-close-bottom" type="button">Close</button></div></div></div>
+
+  <div id="story-form-modal" class="modal" aria-hidden="true">
+    <div class="modal-box modal-box--form">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+      <h2>Share Your Story</h2>
+      <p>Your story can inspire someone today.</p>
+      <form action="https://formsubmit.co/ajax/khalil93paypal@gmail.com" method="POST" data-formsubmit-form data-success-message="Thank you. Your story was sent.">
+        <input type="hidden" name="_subject" value="New story submission - The Woman You Are">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <label><span>Your Name</span><input name="name" required placeholder="Your Name"></label>
+        <label><span>Email optional</span><input type="email" name="email" placeholder="Email (optional)"></label>
+        <label><span>Your Story</span><textarea name="story" rows="7" required placeholder="Your Story..."></textarea></label>
+        <button class="button button--solid" type="submit">Send Story <span aria-hidden="true">↗</span></button>
+        <p class="mail-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=20260610-5"></script>
+</body>
+</html>

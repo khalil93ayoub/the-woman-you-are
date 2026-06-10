@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | The Woman You Are</title>
+  <meta name="description" content="Thank you for supporting The Woman You Are. Share your words after donating.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260610-5">
+</head>
+<body>
+  <header class="site-header is-scrolled" data-header>
+    <a class="brand" href="index.html" aria-label="The Woman You Are home">
+      <span>The</span>
+      <span>Woman</span>
+      <span>You Are</span>
+      <svg viewBox="0 0 44 72" aria-hidden="true">
+        <path d="M22 69c-2-18-1-36 6-56" />
+        <path d="M28 21c7-2 11-7 12-15-8 1-12 5-12 15Z" />
+        <path d="M24 33c-8-1-14-5-17-13 9-1 15 4 17 13Z" />
+        <path d="M29 44c7 0 12-4 14-11-8 0-13 4-14 11Z" />
+        <path d="M22 54c-8 0-14-4-18-12 9 0 15 4 18 12Z" />
+      </svg>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="stories.html">Stories</a>
+      <a href="index.html#choose">Choose Your Title <span aria-hidden="true">⌄</span></a>
+      <a href="index.html#mission">Our Mission</a>
+    </nav>
+
+    <a class="donate-button donate-button--top" href="https://donate.stripe.com/eVq28ra2o1vcfm3bBRcIE05" target="_blank" rel="noopener">
+      Donate <span aria-hidden="true">♡</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="thanks-page" aria-labelledby="thanks-title">
+      <div class="thanks-card">
+        <p class="eyebrow">Donation received</p>
+        <h1 id="thanks-title">Thank you.</h1>
+        <svg class="heart-divider" viewBox="0 0 288 28" aria-hidden="true">
+          <path d="M1 17c28 6 69-2 112 2 47 4 105 3 174-4" />
+          <path d="M144 6c-6-6-15 2-8 11 2 3 6 6 8 8 2-2 7-5 9-8 7-9-2-17-9-11Z" />
+        </svg>
+        <p class="thanks-card__copy">Your support helps keep this tribute alive. If there are words you want to leave for the woman who shaped you, you can share them below.</p>
+
+        <div class="thanks-receipt" aria-live="polite">
+          <span>Confirmation</span>
+          <strong id="confirmation-id">Your Stripe receipt has the payment details.</strong>
+        </div>
+
+        <form class="thanks-form" action="https://formsubmit.co/ajax/khalil93paypal@gmail.com" method="POST" data-formsubmit-form data-success-message="Thank you. Your words were sent.">
+          <input type="hidden" name="_subject" value="Post-donation words - The Woman You Are">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="payment_reference" id="payment-reference" value="">
+          <label><span>Your Name</span><input name="name" placeholder="Your Name" required></label>
+          <label><span>Email optional</span><input type="email" name="email" placeholder="Email (optional)"></label>
+          <label><span>Your Words</span><textarea name="message" rows="7" placeholder="Your Words..." required></textarea></label>
+          <button class="button button--solid" type="submit">Share Your Words <span aria-hidden="true">↗</span></button>
+          <p class="mail-status" aria-live="polite"></p>
+        </form>
+
+        <div class="thanks-card__actions">
+          <a class="button button--outline" href="index.html">Back Home</a>
+          <a class="button button--outline" href="stories.html">Read Stories</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> The Woman You Are. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js?v=20260610-5"></script>
+</body>
+</html>
