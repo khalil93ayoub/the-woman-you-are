@@ -185,6 +185,8 @@ img {
 
 .donate-button--top {
   justify-self: end;
+  line-height: 1.08;
+  text-align: center;
 }
 
 .floating-donate {
@@ -195,6 +197,7 @@ img {
   min-height: 2.35rem;
   padding: 0.56rem 0.95rem;
   font-size: 0.7rem;
+  white-space: nowrap;
 }
 
 .floating-donate.is-dim {
@@ -879,9 +882,11 @@ textarea {
   .donate-button--top {
     grid-column: 3;
     grid-row: 1;
+    max-width: 12rem;
     min-height: 2.55rem;
     padding: 0.72rem 0.95rem;
     font-size: 0.78rem;
+    white-space: normal;
   }
 
   .site-nav {
@@ -993,7 +998,9 @@ textarea {
   }
 
   .donate-button--top {
-    padding-inline: 0.8rem;
+    max-width: 9rem;
+    padding-inline: 0.65rem;
+    font-size: 0.68rem;
   }
 
   .hero {
